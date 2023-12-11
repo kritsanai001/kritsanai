@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <meta http-equiv=”refresh” content="1" />
+    <title>Document</title>
+</head>
+<body>
+  <header class="header">
+    <nav class="nav container">
+      <div class="nav__data">
+        <a href="#" class="nav__logo">
+          <i class="ri-pass-pending-fill"></i> HomeWork
+        </a>
+
+        <div class="nav__toggle" id="nav-toggle">
+          <i class="ri-menu-line nav__burger"></i>
+          <i class="ri-close-line nav__close"></i>
+        </div>
+      </div>
+
+      <div class="nav__menu" id="nav-menu">
+        <ul class="nav__list">
+          <li class="dropdown__item">
+            <div class="nav__link">
+              Main <i class="ri-arrow-down-s-line dropdown__arrow"></i>
+            </div>
+            <ul class="dropdown__menu">
+              <li>
+                <a href="index.html" class="dropdown__link">
+                  <i class="ri-file-info-fill"></i> HOME
+                </a>
+              </li>
+              <li>
+                <a href="JS.html" class="dropdown__link">
+                  <i class="ri-file-info-fill"></i> Js
+                </a>
+                <a href="LAB.html" class="dropdown__link">
+                  <i class="ri-file-info-fill"></i> LAB
+                </a>
+                </a>
+                <a href="Chart.html" class="dropdown__link">
+                  <i class="ri-file-info-fill"></i> Chart
+                </a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <section class="sec-5">
+    <div class="api" id="coinRatesContainer">
+    <div class="googlesheet">
+        <div class="ozx">googlesheet
+        มันจะอัพเดทช้าหน่อย
+      </div>
+        <form name="contact">
+            <input class="wow" name="first_name" type="text" placeholder="Name" required>
+            <input class="wow" name="last_name" type="text" placeholder="lastname" required><br>
+            <input class="wow" name="email" type="text" placeholder="email" required>
+            <input class="wow" name="phone" type="text" placeholder="phone" required><br>
+           <center> <button type="submit" class="btn2">Submit</button><br></center>
+            <a href="https://docs.google.com/spreadsheets/d/12C0oQm6yAhUsLwQnp1hLwqYIoM0tXQdv6jHIFZKbGOw/edit#gid=0">link google docs</a>
+        </form>
+        <br>
+
+        <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vS3v_RCNQPUNx4i1V98g5EoJ5lHk4pnQ6M9nxnEj-vvIo7uUpI_8j2Sw25zk8WbtGUK6oPlRySBAP6Z/pubhtml?widget=true&amp;headers=false" width="600" height="200"></iframe>        <script src="option.js"></script>
+        <script>
+            const scriptURL = 'https://script.google.com/macros/s/AKfycbye9SRoVfUpHc3pmpRjaGtSPb9iA0gFFpaybu5TFCiKsP98h306ZO5_56GCpBM6Kl5C/exec'
+            const form = document.forms['contact']
+            
+            form.addEventListener('submit', e => {
+              e.preventDefault()
+              fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                .then(response => document.getElementById("demo").innerHTML = "<div class='alert alert-primary' role='alert'><b>Thank You for providing the details, We shall get back to you shortly !</b></div>",contact.reset())
+                .catch(error => console.error('Error!', error.message))
+            })
+        </script>
+    </div>
+</body>
+</html>

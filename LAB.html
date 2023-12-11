@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kritsanai</title>
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <header class="header">
+    <nav class="nav container">
+      <div class="nav__data">
+        <a href="#" class="nav__logo">
+          <i class="ri-pass-pending-fill"></i> HomeWork
+        </a>
+
+        <div class="nav__toggle" id="nav-toggle">
+          <i class="ri-menu-line nav__burger"></i>
+          <i class="ri-close-line nav__close"></i>
+        </div>
+      </div>
+
+      <div class="nav__menu" id="nav-menu">
+        <ul class="nav__list">
+          <li class="dropdown__item">
+            <div class="nav__link">
+              Main <i class="ri-arrow-down-s-line dropdown__arrow"></i>
+            </div>
+            <ul class="dropdown__menu">
+              <li>
+                <a href="index.html" class="dropdown__link">
+                  <i class="ri-file-info-fill"></i> HOME
+                </a>
+              </li>
+              <li>
+                <a href="JS.html" class="dropdown__link">
+                  <i class="ri-file-info-fill"></i> Js
+                </a>
+                <a href="googlesheet.html" class="dropdown__link">
+                  <i class="ri-file-info-fill"></i> googlesheet
+                </a>
+                <a href="Chart.html" class="dropdown__link">
+                  <i class="ri-file-info-fill"></i> Chart
+                </a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+
+  <section class="sec-5">
+    <div class="lab">
+      <h1>lab ตัวอย่าง</h1>
+      <h2>งาน lab</h2>
+      <label><h3>Lab 1 เช็คอายุ 20ปีขึ้นไปผ่าน / 20ปีไม่ผ่าน</h3><p id="show">อายุผ่าน: ผ่าน/ไม่ผ่าน</p><center><button class="btn2" onclick="names()">Enter</button><br></center>
+      <hr>
+      <label><h3>Lab 2 หาความยาวของเส้นทแยงมุม</h3><p id="show1">0</p><center><button class="btn2" onclick="diagonal()">Enter</button><br></center>
+          <hr>
+      <label><h3>Lab 3 </h3> <p id="show2">ค่าสะสมปัจจุบัน: 0</p><center><button class="btn2" onclick=" Accumulator()">Enter</button><br></center>
+          <hr>
+          <label><h3>Lab 4 สุ่มตัวเลข 1-10</h3> <p id="show3">สุ่มตัวเลข: 0</p><center><button class="btn2" onclick=" randomnumberr()">Enter</button><br></center>
+              <hr>
+          <label><h3>Lab 5 ตัวอักษรตัวแรกใหญ่</h3> <p id="show4">ตัวอักษรตัวแรกใหญ่เสมอ: Hi</p><center><button class="btn2" onclick=" bigtextt()">Enter</button><br></center>
+
+  </div>
+  </section>
+
+  <footer class="footer-distributed">
+    <div class="footer-right">
+      <a href="https://web.facebook.com/profile.php?id=100023527097197"><i class="ri-facebook-fill"></i></a>
+
+    </div>
+    <div class="footer-left">
+      <p>Khon Kaen Technical College Kritsanai &copy; 2023</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
